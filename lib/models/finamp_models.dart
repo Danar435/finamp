@@ -893,6 +893,12 @@ enum TabContentType {
   static TabContentType fromItemType(String itemType) {
     switch (itemType) {
       case "Audio":
+      case "AudioBook":
+      case "MusicVideo":
+      case "Episode":
+      case "Video":
+      case "Movie":
+      case "Trailer":
         return TabContentType.tracks;
       case "MusicAlbum":
         return TabContentType.albums;
